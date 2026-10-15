@@ -19,7 +19,7 @@ $cod = (new CodSourceFactory($httpClient))->create([
 
 A structure is named in the core's `cod` scheme by its seven digits (`1000000`), read from
 `cod:1000000`, its page `crystallography.net/cod/1000000.html` and its CIF's address. Wikidata
-keeps COD ids in P9824 (on 1,599 items on 2026-10-16), which omnilab/wikidata does not read yet: no
+keeps COD ids in P9824 (on 1,599 items on 2026-10-15), which omnilab/wikidata does not read yet: no
 `Collector` path leads here for now.
 
 ## Which API
@@ -66,7 +66,7 @@ identifier of another base (no InChIKey, no CAS): the `Collector` has nothing to
 
 ## Verified, and not
 
-Against the real service on 2026-10-16: silicon (9008565), the aluminophosphate 1000000 (a
+Against the real service on 2026-10-15: silicon (9008565), the aluminophosphate 1000000 (a
 duplicate of 2011331, its cell's uncertainties, its DOI), an unknown id, the search for "caffeine"
 (117 entries) in two pages of three, a text nothing matches, silicon's CIF. The fixtures in
 `Tests/Fixtures/` are those answers (the CIF cut to its head). COD's server was slow and uneven that

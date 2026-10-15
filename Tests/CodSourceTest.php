@@ -17,7 +17,7 @@ use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
 /**
- * Fixtures recorded from www.crystallography.net/cod on 2026-10-16:
+ * Fixtures recorded from www.crystallography.net/cod on 2026-10-15:
  * silicon (9008565, Wyckoff 1963) and an aluminophosphate (1000000, a
  * duplicate of 2011331), an unknown id (an empty list), the ids whose
  * metadata hold "caffeine" (117) and the rows of its first two pages of
