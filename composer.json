@@ -1,0 +1,46 @@
+{
+    "name": "omnilab/cod",
+    "type": "library",
+    "description": "Omnilab COD: a crystal structure of the Crystallography Open Database by its COD id (9008565) - its names, formula, unit cell with uncertainties, space group, Z, temperature, radiation, R factors, publication and DOI - the entry it duplicates as a related thing, its CIF as a file; a search of the entries' metadata; no key.",
+    "keywords": [
+        "science",
+        "chemistry",
+        "crystallography",
+        "cod",
+        "crystal structures",
+        "cif",
+        "minerals",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\Cod\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\Cod\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
