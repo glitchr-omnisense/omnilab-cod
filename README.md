@@ -1,6 +1,6 @@
 # omnilab/cod
 
-The Crystallography Open Database for [omniscient/omnilab](https://github.com/glitchr-studio/omnilab):
+The Crystallography Open Database for [omnisense/omnilab](https://github.com/glitchr-omnisense/omnilab):
 a crystal structure by its COD id - its names, formula, unit cell (lengths, angles and volume, with
 their uncertainties), space group, Z, temperature, radiation, R factors, its publication (title,
 authors, journal, year, pages, DOI) and flags; the entry it duplicates as a related thing; its CIF
