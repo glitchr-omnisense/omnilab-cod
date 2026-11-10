@@ -140,6 +140,8 @@ final class CodSource extends HttpSource
             throw NotSupportedException::operation('cod', 'open a file of another site ('.$href.')');
         }
 
+        $this->governed('GET', $href);
+
         return $this->http->request('GET', $href, ['headers' => $this->headers]);
     }
 

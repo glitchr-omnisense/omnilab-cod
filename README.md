@@ -39,6 +39,17 @@ the CC0 License. Users of the data should acknowledge the original authors of th
 data" ([crystallography.net/cod](https://www.crystallography.net/cod/)): each entry's publication
 is in its properties. COD asks to be cited as its "Citing COD" page says. No rate is published.
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (read at https://wiki.crystallography.net/RESTful_API/ on 2026-11-10), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnilab/blob/1.x/docs/policies.md)).
+
+- Limits: not published (unknown).
+- Licence: CC0-1.0; commercial use: allowed.
+- Credit: not required: Crystallography Open Database (COD), with the original authors of the structural data (https://www.crystallography.net/cod/).
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or
