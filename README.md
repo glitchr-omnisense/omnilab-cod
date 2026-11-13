@@ -32,6 +32,34 @@ omnilab:
 `cif()` is outside the contract: an `Entity` holds no file, so the CIF is given as an `Asset` by
 this method (and as the `cif` property's address); `open()` reads it.
 
+## Install and a first call
+
+```sh
+composer require omnilab/cod
+```
+
+A real call, with no account and no key: silicon's crystal structure in the Crystallography Open
+Database. `mailto` is your address, sent in the User-Agent so that the service can reach you before
+it blocks a caller; the source keeps to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\Cod\CodSourceFactory;
+
+$cod = (new CodSourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+$silicon = $cod->entity('9008565');
+echo $silicon->label, ', ', $silicon->value('space_group'), ', a = ', $silicon->property('cell_a'), "\n";
+```
+
+Its output on 2026-11-13:
+
+```
+Silicon, F d -3 m :1, a = 5.4307 Å
+```
+
 ## Terms of use
 
 "All data in the COD and the database itself are dedicated to the public domain and licensed under
